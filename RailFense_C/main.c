@@ -32,14 +32,14 @@ void encryptMsg( Mensagem* mensagem, int chave){
         row = row + inversor;
     }
 
-    printf("\n\n\Mensagem Cifrada: \n\n");
+    printf("\n\nMensagem Cifrada: \n\n");
 
     for(line_matrix = 0; line_matrix < chave; ++line_matrix)
         for(col_matrix = 0; col_matrix < size_msg; ++col_matrix)
             if(railMatrix[line_matrix][col_matrix] != '\n'){
                 mensagem->cifrado[u++] = railMatrix[line_matrix][col_matrix];
             }
-    printf("%s", mensagem->cifrado);
+    printf("\n%s\n", mensagem->cifrado);
 
 
     texto_cifra_rail_fense = fopen("texto_cifra_rail_fense.txt", "wb");
@@ -119,7 +119,7 @@ void decryptMsg(Mensagem * mensagem, int chave){
 
         row = row + inversor;
     }
-    printf("%s", mensagem->decifrado);
+    printf("\n%s\n", mensagem->decifrado);
 
     texto__rail_fense_decifrado = fopen("texto__rail_fense_decifrado.txt", "wb");
     int result = fputs( mensagem->decifrado, texto__rail_fense_decifrado);
@@ -161,7 +161,7 @@ int main(){
 
     addMensagem(msgTxt, msg);
     printf("\n\n Mensagem Original: \n\n");
-    printf("%s", msg->texto);
+    printf("\n%s\n", msg->texto);
 
     encryptMsg(msg, chave);
     decryptMsg(msg, chave);

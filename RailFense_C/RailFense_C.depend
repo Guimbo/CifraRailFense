@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538093344 source:c:\users\guilherme\desktop\my active projects\cifrarailfense\railfense_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
