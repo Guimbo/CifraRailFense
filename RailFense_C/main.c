@@ -194,58 +194,67 @@ int decripta_mensagem(Mensagem * mensagem, int chave){
 // Entrada: Recebe um ponteiro para a struct Mensagem e um inteiro chave.
 // Retorna: Retorna 1 se a abertura e escrita do arquivo não for feita da maneira correta.
 //          Caso não tenha erros, a função irá gravar a mensagem cifrada na struct para ser passada ao arquivo.
+
 int encripta_mensagem_modo_2( Mensagem* mensagem, int chave) {
 
-    int tamanho_msg = strlen(mensagem -> texto);
-    int linha_matriz;
-    int col_matriz;
-    int inversor = -1;
+
+    FILE *texto__rail_fense_forma_2;
+    int tamanhoMsg = strlen(mensagem->texto);
+    int jump = (2 * chave) - 2;
     int linha = 0;
-    int col = 0;
-    int indice_cifrado = 0;
-    char rail_matriz[chave][tamanho_msg];
-    FILE *texto_cifra_rail_fense;
-
-    int jump = 18;
-    int next = 0;
-    int item_go = 0;
+    int coluna = 0;
     int index = 0;
-    int last = tamanho_msg;
-    int i=1;
+    int second_jump = 0;
+    int coluninha = 0;
 
-    for(item_go = 0 ; item_go<=chave; item_go++){
-        mensagem->decifrado2[index] = mensagem->texto[item_go];
-        next = item_go + jump;
-        int i2;
-        for(i2= i; i2 < tamanho_msg; i2++){
-            mensagem->decifrado2[i2] = mensagem->texto[next];
-            next = next + jump;
-            if(next >= tamanho_msg+1){
-                printf("MORRI!%d BOA!", i2);
+    for(linha = 0 ; linha < chave; linha++){
+        mensagem->decifrado2[index] = mensagem->texto[linha];
+        if(linha == chave - 1){
+            coluninha = (2 * chave) - 2 + linha;
+        }
+        else{
+            coluninha = jump + linha;
+        }
+        for(coluna = coluninha ; coluna < tamanhoMsg; coluna= coluna + jump){
+            printf("linha is %d JUMP is %d, index is %d, coluna is %d!\n",linha,jump, index, coluna);
+            if(jump <= tamanhoMsg){
+                index = index + 1;
+                printf("AAAAAA- %d and %c -AAAAAAAA\n", coluna, mensagem->texto[coluna]);
+                mensagem->decifrado2[index] = mensagem->texto[coluna];
+
+                printf("BBBBBB- %d and %c -BBBBBB\n", index, mensagem->decifrado2[index]);
+                if(second_jump != 0 && second_jump <= tamanhoMsg){
+                    index = index + 1;
+                    coluna = coluna + second_jump;
+                    mensagem->decifrado2[index] = mensagem->texto[coluna];
+                }
+            }
+            else{
                 break;
             }
-            i = i2;
+            second_jump = second_jump + 2;
+            index = index + 1;
 
         }
         jump = jump - 2;
-        next = 0;
-        if(jump == 0){jump = 18;}
+        if(jump == 0){
+            jump = (2 * chave) - 2;
+        }
     }
-    mensagem->decifrado2[0] = mensagem->texto[0];
-
-
 
     printf("\n\n\n\n\n\n\n\n\n\nMensagem Cifrada MODO 2: \n\n");
 
-    printf("\n %s \n", mensagem->decifrado2);
+    printf("%s", mensagem->decifrado2);
+    printf("\n\n\n");
 
+    texto__rail_fense_forma_2 = fopen("texto__rail_fense_forma_2.txt", "wb");
+    int result = fputs( mensagem->decifrado2, texto__rail_fense_forma_2);
+    if(result == EOF){
+        printf("Deu ruim");
+        return 1;
+    }
 
-    printf("OOOOI eu sou o %c prazer", mensagem->decifrado2[0]);
-
-    printf("\n\n\n\n\n\n\n\n\n\n");
-
-
-
+    fclose(texto__rail_fense_forma_2);
 }
 
 
@@ -288,9 +297,7 @@ void inicia_texto_claro(Mensagem * msg_original) {
 
 int main(){
     //Inicializa struct rfMensagem
-    	//variaveis de tempo
-	clock_t init_count,end_count;
-    double period;
+    //variaveis de tempo
     Mensagem * msg = (Mensagem *)malloc(sizeof(Mensagem));
 
     inicia_texto_claro(msg);
