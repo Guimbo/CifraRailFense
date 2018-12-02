@@ -47,6 +47,7 @@ typedef struct rfMensagem {
     char cifrado[3000];
     char decifrado[3000];
     char decifrado2[3000];
+    char tigre[3000];
 
 } Mensagem;
 
@@ -92,7 +93,7 @@ int encripta_mensagem( Mensagem* mensagem, int chave) {
                 mensagem -> cifrado[indice_cifrado++] = rail_matriz[linha_matriz][col_matriz];
             }
     //Após a conversão o valor cifrado é printado no terminal para fins de visualização.
-    printf("\n %s \n", mensagem -> cifrado);
+    printf("\n%s\n", mensagem -> cifrado);
 
     //gravação do mensagem cifrado no arquivo
     texto_cifra_rail_fense = fopen("texto_cifra_rail_fense.txt", "wb");
@@ -195,70 +196,83 @@ int decripta_mensagem(Mensagem * mensagem, int chave){
 // Retorna: Retorna 1 se a abertura e escrita do arquivo não for feita da maneira correta.
 //          Caso não tenha erros, a função irá gravar a mensagem cifrada na struct para ser passada ao arquivo.
 
-int encripta_mensagem_modo_2( Mensagem* mensagem, int chave) {
-
-
-    FILE *texto__rail_fense_forma_2;
-    int tamanhoMsg = strlen(mensagem->texto);
-    int jump = (2 * chave) - 2;
-    int linha = 0;
-    int coluna = 0;
-    int index = 0;
-    int second_jump = 0;
-    int coluninha = 0;
-
-    for(linha = 0 ; linha < chave; linha++){
-        mensagem->decifrado2[index] = mensagem->texto[linha];
-        if(linha == chave - 1){
-            coluninha = (2 * chave) - 2 + linha;
-        }
-        else{
-            coluninha = jump + linha;
-        }
-        for(coluna = coluninha ; coluna < tamanhoMsg; coluna= coluna + jump){
-            printf("linha is %d JUMP is %d, index is %d, coluna is %d!\n",linha,jump, index, coluna);
-            if(jump <= tamanhoMsg){
-                index = index + 1;
-                printf("AAAAAA- %d and %c -AAAAAAAA\n", coluna, mensagem->texto[coluna]);
-                mensagem->decifrado2[index] = mensagem->texto[coluna];
-
-                printf("BBBBBB- %d and %c -BBBBBB\n", index, mensagem->decifrado2[index]);
-                if(second_jump != 0 && second_jump <= tamanhoMsg){
-                    index = index + 1;
-                    coluna = coluna + second_jump;
-                    mensagem->decifrado2[index] = mensagem->texto[coluna];
-                }
-            }
-            else{
-                break;
-            }
-            second_jump = second_jump + 2;
-            index = index + 1;
-
-        }
-        jump = jump - 2;
-        if(jump == 0){
-            jump = (2 * chave) - 2;
-        }
+int novo_primeiro_salto(int linha, int chave_rail){
+    int salto = salto_pela_formula(chave_rail);
+    if(linha == 0 || linha == chave_rail-1){
+        return salto;
+    }
+    else{
+        salto = salto - (2* linha);
+        return salto;
     }
 
-    printf("\n\n\n\n\n\n\n\n\n\nMensagem Cifrada MODO 2: \n\n");
-
-    printf("%s", mensagem->decifrado2);
-    printf("\n\n\n");
-
-    texto__rail_fense_forma_2 = fopen("texto__rail_fense_forma_2.txt", "wb");
-    int result = fputs( mensagem->decifrado2, texto__rail_fense_forma_2);
-    if(result == EOF){
-        printf("Deu ruim");
-        return 1;
-    }
-
-    fclose(texto__rail_fense_forma_2);
 }
 
 
+int novo_segundo_salto(int linha, int chave_rail){
+    int salto = salto_pela_formula(chave_rail);
+    if(linha == 0 || linha == chave_rail-1){
+        return salto;
+    }
+    else{
+        salto = 2 * linha;
+        return salto;
 
+
+    }
+}
+
+int salto_pela_formula(int key_of_rail){
+    int salto = (2 * key_of_rail) - 2;
+    return salto;
+
+}
+
+int cifra_de_rail_tigre( Mensagem* mensagem, int chave) {
+
+    int key = chave;
+    int tamanhoMsg = strlen(mensagem->texto);
+    int linha = 0;
+
+    int primeiro_salto = novo_primeiro_salto(linha,key);
+    int segundo_salto = novo_segundo_salto(linha,key);
+
+    int coluna = 0;
+    int index = 0;
+    int p_salto = 0;
+    int s_salto = 0;
+
+    printf("\nInicio - %d\n", tamanhoMsg);
+    for(linha=0; linha< key; linha++){
+
+        primeiro_salto = novo_primeiro_salto(linha,key);
+        segundo_salto = novo_segundo_salto(linha,key);
+        p_salto = primeiro_salto + linha;
+        s_salto = p_salto + segundo_salto;
+
+        mensagem->tigre[index] = mensagem->texto[linha];
+        index ++;
+
+        if(p_salto > tamanhoMsg){break;}
+
+        while(1){
+            if(p_salto > tamanhoMsg - 1){break;}
+            mensagem->tigre[index] = mensagem->texto[p_salto];
+            index++;
+            if(s_salto > tamanhoMsg - 1){break;}
+            mensagem->tigre[index] = mensagem->texto[s_salto];
+            index++;
+
+            p_salto = s_salto + primeiro_salto;
+            s_salto = p_salto + segundo_salto;
+        }
+    }
+    printf("\n\n");
+    printf("%s", mensagem->tigre);
+
+    printf("\n\n");
+
+}
 
 // Entrada:
 // Faz:
@@ -295,6 +309,40 @@ void inicia_texto_claro(Mensagem * msg_original) {
     //printf("\n%s\n", msg_original -> texto);
 }
 
+void validacao(Mensagem *mensagem){
+
+    printf("\n\nIniciando validacao!\n");
+    int tamanho_msg = strlen(mensagem -> texto);
+    int tamanho_cifra = strlen(mensagem -> cifrado);
+    int tamanho_tigre = strlen(mensagem -> tigre);
+    int i = 0;
+    int erro = 0;
+    int birth;
+    printf("msg - %d - cifra - %d - tigre - %d\n", tamanho_msg, tamanho_cifra, tamanho_tigre);
+    if(tamanho_msg == tamanho_cifra && tamanho_cifra == tamanho_tigre && tamanho_msg == tamanho_tigre){
+        printf("validacao 1 - OK - as mensagens estao com o mesmo tamanho\n");
+        birth = 1;
+    }
+    else{
+        printf("validacao 1 - FALHA - tamanhos diferentes\n");
+    }
+    for(i=0; i< tamanho_msg; i++){
+        if(mensagem->cifrado[i] != mensagem->tigre[i]){
+            erro += 1;
+        }
+    }
+    if(erro == 0){
+        printf("validacao 2 - OK - As mensagens sao iguais\n");
+        birth += 1;
+    }else{
+        printf("validacao 2 - FALHA - As mensagens sao diferentes. Erro: %d/%d", erro, tamanho_msg);
+    }
+    if(birth == 2){
+        printf("\nNOVO ALGORITMO DE CIFRAGEM CRIADO COM SUCESSO!\n");
+        printf("\n -Cifra do tigre ativada- \n");
+    }
+}
+
 int main(){
     //Inicializa struct rfMensagem
     //variaveis de tempo
@@ -302,8 +350,8 @@ int main(){
 
     inicia_texto_claro(msg);
     encripta_mensagem(msg, 10);
-    decripta_mensagem(msg, 10);
-    encripta_mensagem_modo_2(msg, 10);
+    cifra_de_rail_tigre(msg, 10);
+    validacao(msg);
     }
     //end_count = clock();
 
