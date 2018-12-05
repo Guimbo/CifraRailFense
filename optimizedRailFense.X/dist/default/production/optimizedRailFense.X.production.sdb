@@ -11,21 +11,33 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"78 C:\Users\Guilherme\Desktop\My Active Projects\optimizedRailFense.X\ORailFense.c
+"81 C:\Users\Guilherme\Desktop\My Active Projects\CifraRailFense\optimizedRailFense.X\ORailFense.c
 [v _UART_iniciar UART_iniciar `(v  1 e 1 0 ]
-"92
+"95
 [v _UART_Escrever UART_Escrever `(v  1 e 1 0 ]
-"97
-[v _UART_Escrever_Texto UART_Escrever_Texto `(v  1 e 1 0 ]
-"104
+"107
 [v _salto_pela_formula salto_pela_formula `(i  1 e 2 0 ]
-"110
+"113
 [v _novo_salto novo_salto `(i  1 e 2 0 ]
-"125
+"128
 [v _cifra_de_rail_tigre cifra_de_rail_tigre `(i  1 e 2 0 ]
-"173
+"176
 [v _main main `(i  1 e 2 0 ]
-"3833 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h
+"732 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+[s S130 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"1029
+[u S139 . 1 `S130 1 . 1 0 ]
+[v _LATBbits LATBbits `VES139  1 e 1 @23 ]
+"3833
 [v _TXREG TXREG `VEuc  1 e 1 @282 ]
 "3890
 [v _SPBRG SPBRG `VEuc  1 e 1 @283 ]
@@ -92,71 +104,62 @@
 "35095
 "35095
 [v _ANSELCbits ANSELCbits `VES31  1 e 1 @3918 ]
-"70 C:\Users\Guilherme\Desktop\My Active Projects\optimizedRailFense.X\ORailFense.c
-[v _texto texto `DC[496]uc  1 e 496 0 ]
-"173
+"73 C:\Users\Guilherme\Desktop\My Active Projects\CifraRailFense\optimizedRailFense.X\ORailFense.c
+[v _texto texto `DC[3000]uc  1 e 3000 0 ]
+"176
 [v _main main `(i  1 e 2 0 ]
 {
-"189
+"192
 } 0
-"125
+"128
 [v _cifra_de_rail_tigre cifra_de_rail_tigre `(i  1 e 2 0 ]
 {
-"129
-[v cifra_de_rail_tigre@linha linha `i  1 a 2 17 ]
-"134
-[v cifra_de_rail_tigre@p_salto p_salto `i  1 a 2 15 ]
-"127
-[v cifra_de_rail_tigre@key key `i  1 a 2 13 ]
-"135
-[v cifra_de_rail_tigre@s_salto s_salto `i  1 a 2 11 ]
-"128
-[v cifra_de_rail_tigre@tamanhoMsg tamanhoMsg `i  1 a 2 9 ]
 "132
-[v cifra_de_rail_tigre@segundo_salto segundo_salto `i  1 a 2 7 ]
+[v cifra_de_rail_tigre@linha linha `i  1 a 2 17 ]
+"137
+[v cifra_de_rail_tigre@p_salto p_salto `i  1 a 2 15 ]
+"130
+[v cifra_de_rail_tigre@key key `i  1 a 2 13 ]
+"138
+[v cifra_de_rail_tigre@s_salto s_salto `i  1 a 2 11 ]
 "131
+[v cifra_de_rail_tigre@tamanhoMsg tamanhoMsg `i  1 a 2 9 ]
+"135
+[v cifra_de_rail_tigre@segundo_salto segundo_salto `i  1 a 2 7 ]
+"134
 [v cifra_de_rail_tigre@primeiro_salto primeiro_salto `i  1 a 2 5 ]
-"170
+"173
 } 0
-"110
+"113
 [v _novo_salto novo_salto `(i  1 e 2 0 ]
 {
-"111
+"114
 [v novo_salto@salto salto `i  1 a 2 0 ]
-"110
+"113
 [v novo_salto@linha linha `i  1 p 2 6 ]
 [v novo_salto@chave_rail chave_rail `i  1 p 2 8 ]
 [v novo_salto@tipo tipo `i  1 p 2 10 ]
-"123
+"126
 } 0
-"104
+"107
 [v _salto_pela_formula salto_pela_formula `(i  1 e 2 0 ]
 {
-"105
-[v salto_pela_formula@salto salto `i  1 a 2 4 ]
-"104
-[v salto_pela_formula@key_of_rail key_of_rail `i  1 p 2 0 ]
 "108
+[v salto_pela_formula@salto salto `i  1 a 2 4 ]
+"107
+[v salto_pela_formula@key_of_rail key_of_rail `i  1 p 2 0 ]
+"111
 } 0
-"78
-[v _UART_iniciar UART_iniciar `(v  1 e 1 0 ]
-{
-"90
-} 0
-"97
-[v _UART_Escrever_Texto UART_Escrever_Texto `(v  1 e 1 0 ]
-{
-"98
-[v UART_Escrever_Texto@index index `i  1 a 2 4 ]
-"97
-[v UART_Escrever_Texto@texto texto `*.25uc  1 p 2 1 ]
-"101
-} 0
-"92
+"95
 [v _UART_Escrever UART_Escrever `(v  1 e 1 0 ]
 {
 [v UART_Escrever@c c `uc  1 a 1 wreg ]
 [v UART_Escrever@c c `uc  1 a 1 wreg ]
 [v UART_Escrever@c c `uc  1 a 1 0 ]
-"95
+"98
+} 0
+"81
+[v _UART_iniciar UART_iniciar `(v  1 e 1 0 ]
+{
+"93
 } 0

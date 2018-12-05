@@ -68,6 +68,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h: 3833: extern volatile unsigned char TXREG __attribute__((address(0x11A)));
 [v _TXREG `Vuc ~T0 @X0 0 e@282 ]
 [p mainexit ]
+"732
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h: 732: extern volatile unsigned char TRISB __attribute__((address(0x012)));
+[v _TRISB `Vuc ~T0 @X0 0 e@18 ]
+"1018
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h: 1018:     struct {
+[s S55 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S55 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"1017
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h: 1017: typedef union {
+[u S54 `S55 1 ]
+[n S54 . . ]
+"1029
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h: 1029: extern volatile LATBbits_t LATBbits __attribute__((address(0x017)));
+[v _LATBbits `VS54 ~T0 @X0 0 e@23 ]
+[v F12202 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
+[v __delay `JF12202 ~T0 @X0 0 e ]
+[p i __delay ]
 "26 ORailFense.c
 [p x FEXTOSC = OFF ]
 "27
@@ -1750,9 +1768,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "36645
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18875.h: 36645: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"70 ORailFense.c
-[; ;ORailFense.c: 70: const char texto[496] = {
-[v _texto `Cuc ~T0 @X0 -> 496 `i e ]
+"73 ORailFense.c
+[; ;ORailFense.c: 73: const char texto[3000] = {
+[v _texto `Cuc ~T0 @X0 -> 3000 `i e ]
 [i _texto
 :U ..
 -> -> 78 `ui `uc
@@ -2235,137 +2253,2641 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 109 `ui `uc
 -> -> 46 `ui `uc
 -> -> 32 `ui `uc
--> -> 71 `ui `uc
--> -> 97 `ui `uc
--> -> 98 `ui `uc
+-> -> 65 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
 -> -> 114 `ui `uc
--> -> 105 `ui `uc
 -> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
 -> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 50 `ui `uc
+-> -> 48 `ui `uc
+-> -> 48 `ui `uc
+-> -> 55 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 71 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 87 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 50 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 50 `ui `uc
+-> -> 48 `ui `uc
+-> -> 49 `ui `uc
+-> -> 48 `ui `uc
 -> -> 32 `ui `uc
 -> -> 80 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 121 `ui `uc
+-> -> 83 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 80 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 98 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 114 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 71 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 87 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 58 `ui `uc
+-> -> 32 `ui `uc
+-> -> 71 `ui `uc
+-> -> 104 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 83 `ui `uc
+-> -> 112 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 71 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 101 `ui `uc
+-> -> 107 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 121 `ui `uc
+-> -> 45 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 83 `ui `uc
+-> -> 112 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 103 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 112 `ui `uc
+-> -> 97 `ui `uc
+-> -> 119 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 90 `ui `uc
+-> -> 101 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
 -> -> 97 `ui `uc
 -> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 109 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 72 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 116 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
 -> -> 104 `ui `uc
 -> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 102 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 99 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 111 `ui `uc
+-> -> 99 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 116 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 115 `ui `uc
+-> -> 105 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 68 `ui `uc
+-> -> 101 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 107 `ui `uc
+-> -> 110 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 110 `ui `uc
+-> -> 111 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 79 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 109 `ui `uc
+-> -> 112 `ui `uc
+-> -> 105 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 69 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 100 `ui `uc
+-> -> 111 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 90 `ui `uc
+-> -> 101 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 112 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 112 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 99 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 117 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 226 `ui `uc
+-> -> 128 `ui `uc
+-> -> 148 `ui `uc
+-> -> 32 `ui `uc
+-> -> 106 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 117 `ui `uc
+-> -> 114 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 84 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 67 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 115 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 90 `ui `uc
+-> -> 101 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 65 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 65 `ui `uc
 -> -> 114 `ui `uc
 -> -> 101 `ui `uc
 -> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 102 `ui `uc
+-> -> 115 `ui `uc
+-> -> 112 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 107 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 109 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 69 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 117 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 105 `ui `uc
+-> -> 98 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 68 `ui `uc
+-> -> 101 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 107 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 105 `ui `uc
+-> -> 100 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 117 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 107 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 121 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 84 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 105 `ui `uc
+-> -> 118 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 99 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 99 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 121 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 112 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 109 `ui `uc
+-> -> 46 `ui `uc
+-> -> 65 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 119 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 99 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 99 `ui `uc
+-> -> 107 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 103 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 32 `ui `uc
+-> -> 71 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 87 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 72 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 112 `ui `uc
+-> -> 112 `ui `uc
+-> -> 101 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 99 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 99 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 99 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 116 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 99 `ui `uc
+-> -> 99 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 117 `ui `uc
+-> -> 112 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 103 `ui `uc
+-> -> 105 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 109 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 83 `ui `uc
+-> -> 112 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 72 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 116 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 117 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 112 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 66 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 98 `ui `uc
+-> -> 117 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 69 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 87 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 102 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 105 `ui `uc
+-> -> 103 `ui `uc
+-> -> 104 `ui `uc
+-> -> 116 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 116 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 65 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 107 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 117 `ui `uc
+-> -> 114 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 116 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 73 `ui `uc
+-> -> 109 `ui `uc
+-> -> 112 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 117 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 115 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 65 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 118 `ui `uc
+-> -> 105 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 117 `ui `uc
+-> -> 112 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 66 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 67 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 100 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 101 `ui `uc
+-> -> 99 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 109 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 87 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 119 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 112 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 102 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 112 `ui `uc
+-> -> 112 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 102 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 115 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 46 `ui `uc
+-> -> 65 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 103 `ui `uc
+-> -> 111 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 121 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 117 `ui `uc
+-> -> 98 `ui `uc
+-> -> 106 `ui `uc
+-> -> 101 `ui `uc
+-> -> 99 `ui `uc
+-> -> 116 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 114 `ui `uc
+-> -> 121 `ui `uc
+-> -> 115 `ui `uc
+-> -> 105 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 107 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 111 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 110 `ui `uc
+-> -> 111 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 99 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 83 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 105 `ui `uc
+-> -> 102 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 121 `ui `uc
+-> -> 100 `ui `uc
+-> -> 97 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 112 `ui `uc
+-> -> 101 `ui `uc
+-> -> 111 `ui `uc
+-> -> 112 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 65 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 97 `ui `uc
+-> -> 119 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 105 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 99 `ui `uc
+-> -> 104 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 112 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 100 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 112 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 83 `ui `uc
+-> -> 112 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 98 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 109 `ui `uc
+-> -> 112 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 117 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 112 `ui `uc
+-> -> 97 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 117 `ui `uc
+-> -> 103 `ui `uc
+-> -> 104 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 32 `ui `uc
+-> -> 118 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 84 `ui `uc
+-> -> 111 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 100 `ui `uc
+-> -> 114 `ui `uc
+-> -> 117 `ui `uc
+-> -> 110 `ui `uc
+-> -> 107 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 99 `ui `uc
+-> -> 111 `ui `uc
+-> -> 103 `ui `uc
+-> -> 110 `ui `uc
+-> -> 105 `ui `uc
+-> -> 122 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 119 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 108 `ui `uc
+-> -> 111 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 109 `ui `uc
+-> -> 112 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 117 `ui `uc
+-> -> 103 `ui `uc
+-> -> 104 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 121 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 105 `ui `uc
+-> -> 103 `ui `uc
+-> -> 104 `ui `uc
+-> -> 116 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 79 `ui `uc
+-> -> 110 `ui `uc
+-> -> 99 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 108 `ui `uc
+-> -> 105 `ui `uc
+-> -> 122 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 98 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 116 `ui `uc
+-> -> 97 `ui `uc
+-> -> 107 `ui `uc
+-> -> 101 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 75 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 114 `ui `uc
+-> -> 111 `ui `uc
+-> -> 107 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 65 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 110 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 119 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 110 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 46 `ui `uc
+-> -> 32 `ui `uc
+-> -> 84 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 118 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 108 `ui `uc
+-> -> 97 `ui `uc
+-> -> 103 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 97 `ui `uc
+-> -> 99 `ui `uc
+-> -> 108 `ui `uc
+-> -> 101 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 104 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 114 `ui `uc
+-> -> 105 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 119 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 44 `ui `uc
+-> -> 32 `ui `uc
+-> -> 99 `ui `uc
+-> -> 117 `ui `uc
+-> -> 114 `ui `uc
+-> -> 115 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 109 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 111 `ui `uc
+-> -> 32 `ui `uc
+-> -> 98 `ui `uc
+-> -> 101 `ui `uc
+-> -> 97 `ui `uc
+-> -> 114 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 97 `ui `uc
+-> -> 115 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 102 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 97 `ui `uc
+-> -> 109 `ui `uc
+-> -> 105 `ui `uc
+-> -> 108 `ui `uc
+-> -> 121 `ui `uc
+-> -> 32 `ui `uc
+-> -> 116 `ui `uc
+-> -> 104 `ui `uc
+-> -> 97 `ui `uc
+-> -> 116 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 101 `ui `uc
+-> -> 32 `ui `uc
+-> -> 109 `ui `uc
+-> -> 117 `ui `uc
+-> -> 114 `ui `uc
+-> -> 100 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 100 `ui `uc
+-> -> 32 `ui `uc
+-> -> 111 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 104 `ui `uc
+-> -> 105 `ui `uc
+-> -> 115 `ui `uc
+-> -> 32 `ui `uc
+-> -> 115 `ui `uc
+-> -> 107 `ui `uc
+-> -> 105 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 102 `ui `uc
+-> -> 111 `ui `uc
+-> -> 114 `ui `uc
+-> -> 101 `ui `uc
+-> -> 118 `ui `uc
+-> -> 101 `ui `uc
+-> -> 114 `ui `uc
 ..
 ]
-"78
-[; ;ORailFense.c: 78: void UART_iniciar(){
+"81
+[; ;ORailFense.c: 81: void UART_iniciar(){
 [v _UART_iniciar `(v ~T0 @X0 1 ef ]
 {
 [e :U _UART_iniciar ]
 [f ]
-"79
-[; ;ORailFense.c: 79:     ANSELCbits.ANSC7 = 0;
-[e = . . _ANSELCbits 0 7 -> -> 0 `i `uc ]
-"80
-[; ;ORailFense.c: 80:     ANSELCbits.ANSC6 = 0;
-[e = . . _ANSELCbits 0 6 -> -> 0 `i `uc ]
-"81
-[; ;ORailFense.c: 81:     RC6PPS = 0x10;
-[e = _RC6PPS -> -> 16 `i `uc ]
 "82
-[; ;ORailFense.c: 82:     RXPPSbits.RXPPS = 0x17;
-[e = . . _RXPPSbits 1 0 -> -> 23 `i `uc ]
+[; ;ORailFense.c: 82:     ANSELCbits.ANSC7 = 0;
+[e = . . _ANSELCbits 0 7 -> -> 0 `i `uc ]
 "83
-[; ;ORailFense.c: 83:     TX1STAbits.BRGH = 0;
-[e = . . _TX1STAbits 0 2 -> -> 0 `i `uc ]
+[; ;ORailFense.c: 83:     ANSELCbits.ANSC6 = 0;
+[e = . . _ANSELCbits 0 6 -> -> 0 `i `uc ]
 "84
-[; ;ORailFense.c: 84:     BAUDCON1bits.BRG16 = 0;
-[e = . . _BAUDCON1bits 0 3 -> -> 0 `i `uc ]
+[; ;ORailFense.c: 84:     RC6PPS = 0x10;
+[e = _RC6PPS -> -> 16 `i `uc ]
 "85
-[; ;ORailFense.c: 85:     SPBRG = 51;
-[e = _SPBRG -> -> 51 `i `uc ]
+[; ;ORailFense.c: 85:     RXPPSbits.RXPPS = 0x17;
+[e = . . _RXPPSbits 1 0 -> -> 23 `i `uc ]
 "86
-[; ;ORailFense.c: 86:     RC1STAbits.SPEN = 1;
-[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
+[; ;ORailFense.c: 86:     TX1STAbits.BRGH = 0;
+[e = . . _TX1STAbits 0 2 -> -> 0 `i `uc ]
 "87
-[; ;ORailFense.c: 87:     RC1STAbits.CREN = 1;
-[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+[; ;ORailFense.c: 87:     BAUDCON1bits.BRG16 = 0;
+[e = . . _BAUDCON1bits 0 3 -> -> 0 `i `uc ]
 "88
-[; ;ORailFense.c: 88:     TX1STAbits.TXEN = 1;
-[e = . . _TX1STAbits 0 5 -> -> 1 `i `uc ]
+[; ;ORailFense.c: 88:     SPBRG = 51;
+[e = _SPBRG -> -> 51 `i `uc ]
 "89
-[; ;ORailFense.c: 89:     TX1STAbits.SYNC = 0;
-[e = . . _TX1STAbits 0 4 -> -> 0 `i `uc ]
+[; ;ORailFense.c: 89:     RC1STAbits.SPEN = 1;
+[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
 "90
-[; ;ORailFense.c: 90: }
+[; ;ORailFense.c: 90:     RC1STAbits.CREN = 1;
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+"91
+[; ;ORailFense.c: 91:     TX1STAbits.TXEN = 1;
+[e = . . _TX1STAbits 0 5 -> -> 1 `i `uc ]
+"92
+[; ;ORailFense.c: 92:     TX1STAbits.SYNC = 0;
+[e = . . _TX1STAbits 0 4 -> -> 0 `i `uc ]
+"93
+[; ;ORailFense.c: 93: }
 [e :UE 1628 ]
 }
-"92
-[; ;ORailFense.c: 92: void UART_Escrever(char c){
+"95
+[; ;ORailFense.c: 95: void UART_Escrever(char c){
 [v _UART_Escrever `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _UART_Escrever ]
 [v _c `uc ~T0 @X0 1 r1 ]
 [f ]
-"93
-[; ;ORailFense.c: 93:     while(!TX1STAbits.TRMT);
+"96
+[; ;ORailFense.c: 96:     while(!TX1STAbits.TRMT);
 [e $U 1630  ]
 [e :U 1631 ]
 [e :U 1630 ]
 [e $ ! != -> . . _TX1STAbits 0 1 `i -> 0 `i 1631  ]
 [e :U 1632 ]
-"94
-[; ;ORailFense.c: 94:     TXREG = c;
+"97
+[; ;ORailFense.c: 97:     TXREG = c;
 [e = _TXREG -> _c `uc ]
-"95
-[; ;ORailFense.c: 95: }
+"98
+[; ;ORailFense.c: 98: }
 [e :UE 1629 ]
 }
-"97
-[; ;ORailFense.c: 97: void UART_Escrever_Texto(char* texto){
+"100
+[; ;ORailFense.c: 100: void UART_Escrever_Texto(char* texto){
 [v _UART_Escrever_Texto `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _UART_Escrever_Texto ]
 [v _texto `*uc ~T0 @X0 1 r1 ]
 [f ]
-"98
-[; ;ORailFense.c: 98:     int index;
+"101
+[; ;ORailFense.c: 101:     int index;
 [v _index `i ~T0 @X0 1 a ]
-"99
-[; ;ORailFense.c: 99:     for(index=0; texto[index]!='\0'; index++)
+"102
+[; ;ORailFense.c: 102:     for(index=0; texto[index]!='\0'; index++)
 {
 [e = _index -> 0 `i ]
 [e $U 1637  ]
 [e :U 1634 ]
-"100
-[; ;ORailFense.c: 100:         UART_Escrever(texto[index]);
+"103
+[; ;ORailFense.c: 103:         UART_Escrever(texto[index]);
 [e ( _UART_Escrever (1 *U + _texto * -> _index `x -> -> # *U _texto `i `x ]
 [e ++ _index -> 1 `i ]
 [e :U 1637 ]
 [e $ != -> *U + _texto * -> _index `x -> -> # *U _texto `i `x `ui -> 0 `ui 1634  ]
 [e :U 1635 ]
 }
-"101
-[; ;ORailFense.c: 101: }
+"104
+[; ;ORailFense.c: 104: }
 [e :UE 1633 ]
 }
-"104
-[; ;ORailFense.c: 104: int salto_pela_formula(int key_of_rail){
+"107
+[; ;ORailFense.c: 107: int salto_pela_formula(int key_of_rail){
 [v _salto_pela_formula `(i ~T0 @X0 1 ef1`i ]
 {
 [e :U _salto_pela_formula ]
 [v _key_of_rail `i ~T0 @X0 1 r1 ]
 [f ]
-"105
-[; ;ORailFense.c: 105:     int salto = (2 * key_of_rail) - 2;
+"108
+[; ;ORailFense.c: 108:     int salto = (2 * key_of_rail) - 2;
 [v _salto `i ~T0 @X0 1 a ]
 [e = _salto - * -> 2 `i _key_of_rail -> 2 `i ]
-"106
-[; ;ORailFense.c: 106:     return salto;
+"109
+[; ;ORailFense.c: 109:     return salto;
 [e ) _salto ]
 [e $UE 1638  ]
-"108
-[; ;ORailFense.c: 108: }
+"111
+[; ;ORailFense.c: 111: }
 [e :UE 1638 ]
 }
-"110
-[; ;ORailFense.c: 110: int novo_salto(int linha, int chave_rail, int tipo){
+"113
+[; ;ORailFense.c: 113: int novo_salto(int linha, int chave_rail, int tipo){
 [v _novo_salto `(i ~T0 @X0 1 ef3`i`i`i ]
 {
 [e :U _novo_salto ]
@@ -2373,214 +4895,197 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _chave_rail `i ~T0 @X0 1 r2 ]
 [v _tipo `i ~T0 @X0 1 r3 ]
 [f ]
-"111
-[; ;ORailFense.c: 111:     int salto = salto_pela_formula(chave_rail);
+"114
+[; ;ORailFense.c: 114:     int salto = salto_pela_formula(chave_rail);
 [v _salto `i ~T0 @X0 1 a ]
 [e = _salto ( _salto_pela_formula (1 _chave_rail ]
-"112
-[; ;ORailFense.c: 112:     if(linha == 0 || linha == chave_rail-1){
+"115
+[; ;ORailFense.c: 115:     if(linha == 0 || linha == chave_rail-1){
 [e $ ! || == _linha -> 0 `i == _linha - _chave_rail -> 1 `i 1640  ]
 {
-"113
-[; ;ORailFense.c: 113:         return salto;
+"116
+[; ;ORailFense.c: 116:         return salto;
 [e ) _salto ]
 [e $UE 1639  ]
-"114
-[; ;ORailFense.c: 114:     }
+"117
+[; ;ORailFense.c: 117:     }
 }
 [e $U 1641  ]
-"115
-[; ;ORailFense.c: 115:     else{
+"118
+[; ;ORailFense.c: 118:     else{
 [e :U 1640 ]
 {
-"116
-[; ;ORailFense.c: 116:         if(tipo == 1){
+"119
+[; ;ORailFense.c: 119:         if(tipo == 1){
 [e $ ! == _tipo -> 1 `i 1642  ]
 {
-"117
-[; ;ORailFense.c: 117:             salto = salto - (2* linha);
+"120
+[; ;ORailFense.c: 120:             salto = salto - (2* linha);
 [e = _salto - _salto * -> 2 `i _linha ]
-"118
-[; ;ORailFense.c: 118:         }else if(tipo == 2){
+"121
+[; ;ORailFense.c: 121:         }else if(tipo == 2){
 }
 [e $U 1643  ]
 [e :U 1642 ]
 [e $ ! == _tipo -> 2 `i 1644  ]
 {
-"119
-[; ;ORailFense.c: 119:             salto = 2 * linha;
+"122
+[; ;ORailFense.c: 122:             salto = 2 * linha;
 [e = _salto * -> 2 `i _linha ]
-"120
-[; ;ORailFense.c: 120:         }
+"123
+[; ;ORailFense.c: 123:         }
 }
 [e :U 1644 ]
 [e :U 1643 ]
-"121
-[; ;ORailFense.c: 121:         return salto;
+"124
+[; ;ORailFense.c: 124:         return salto;
 [e ) _salto ]
 [e $UE 1639  ]
-"122
-[; ;ORailFense.c: 122:     }
+"125
+[; ;ORailFense.c: 125:     }
 }
 [e :U 1641 ]
-"123
-[; ;ORailFense.c: 123: }
+"126
+[; ;ORailFense.c: 126: }
 [e :UE 1639 ]
 }
-"125
-[; ;ORailFense.c: 125: int cifra_de_rail_tigre() {
+"128
+[; ;ORailFense.c: 128: int cifra_de_rail_tigre() {
 [v _cifra_de_rail_tigre `(i ~T0 @X0 1 ef ]
 {
 [e :U _cifra_de_rail_tigre ]
 [f ]
-"127
-[; ;ORailFense.c: 127:     int key = 10;
+"130
+[; ;ORailFense.c: 130:     int key = 10;
 [v _key `i ~T0 @X0 1 a ]
 [e = _key -> 10 `i ]
-"128
-[; ;ORailFense.c: 128:     int tamanhoMsg = 496;
+"131
+[; ;ORailFense.c: 131:     int tamanhoMsg = 3000;
 [v _tamanhoMsg `i ~T0 @X0 1 a ]
-[e = _tamanhoMsg -> 496 `i ]
-"129
-[; ;ORailFense.c: 129:     int linha = 0;
+[e = _tamanhoMsg -> 3000 `i ]
+"132
+[; ;ORailFense.c: 132:     int linha = 0;
 [v _linha `i ~T0 @X0 1 a ]
 [e = _linha -> 0 `i ]
-"131
-[; ;ORailFense.c: 131:     int primeiro_salto = novo_salto(linha,key, 1);
+"134
+[; ;ORailFense.c: 134:     int primeiro_salto = novo_salto(linha,key, 1);
 [v _primeiro_salto `i ~T0 @X0 1 a ]
 [e = _primeiro_salto ( _novo_salto (3 , , _linha _key -> 1 `i ]
-"132
-[; ;ORailFense.c: 132:     int segundo_salto = novo_salto(linha,key, 2);
+"135
+[; ;ORailFense.c: 135:     int segundo_salto = novo_salto(linha,key, 2);
 [v _segundo_salto `i ~T0 @X0 1 a ]
 [e = _segundo_salto ( _novo_salto (3 , , _linha _key -> 2 `i ]
-"134
-[; ;ORailFense.c: 134:     int p_salto = 0;
+"137
+[; ;ORailFense.c: 137:     int p_salto = 0;
 [v _p_salto `i ~T0 @X0 1 a ]
 [e = _p_salto -> 0 `i ]
-"135
-[; ;ORailFense.c: 135:     int s_salto = 0;
+"138
+[; ;ORailFense.c: 138:     int s_salto = 0;
 [v _s_salto `i ~T0 @X0 1 a ]
 [e = _s_salto -> 0 `i ]
-"138
-[; ;ORailFense.c: 138:     for(linha=0; linha< key; linha++){
+"141
+[; ;ORailFense.c: 141:     for(linha=0; linha< key; linha++){
 {
 [e = _linha -> 0 `i ]
 [e $U 1649  ]
 [e :U 1646 ]
 {
-"140
-[; ;ORailFense.c: 140:         primeiro_salto = novo_salto(linha,key, 1);
-[e = _primeiro_salto ( _novo_salto (3 , , _linha _key -> 1 `i ]
-"141
-[; ;ORailFense.c: 141:         segundo_salto = novo_salto(linha,key, 2);
-[e = _segundo_salto ( _novo_salto (3 , , _linha _key -> 2 `i ]
-"142
-[; ;ORailFense.c: 142:         p_salto = primeiro_salto + linha;
-[e = _p_salto + _primeiro_salto _linha ]
 "143
-[; ;ORailFense.c: 143:         s_salto = p_salto + segundo_salto;
+[; ;ORailFense.c: 143:         primeiro_salto = novo_salto(linha,key, 1);
+[e = _primeiro_salto ( _novo_salto (3 , , _linha _key -> 1 `i ]
+"144
+[; ;ORailFense.c: 144:         segundo_salto = novo_salto(linha,key, 2);
+[e = _segundo_salto ( _novo_salto (3 , , _linha _key -> 2 `i ]
+"145
+[; ;ORailFense.c: 145:         p_salto = primeiro_salto + linha;
+[e = _p_salto + _primeiro_salto _linha ]
+"146
+[; ;ORailFense.c: 146:         s_salto = p_salto + segundo_salto;
 [e = _s_salto + _p_salto _segundo_salto ]
-"147
-[; ;ORailFense.c: 147:         UART_Escrever(texto[linha]);
+"150
+[; ;ORailFense.c: 150:         UART_Escrever(texto[linha]);
 [e ( _UART_Escrever (1 *U + &U _texto * -> -> _linha `ui `ux -> -> # *U &U _texto `ui `ux ]
-"149
-[; ;ORailFense.c: 149:         if(p_salto > tamanhoMsg){break;}
+"152
+[; ;ORailFense.c: 152:         if(p_salto > tamanhoMsg){break;}
 [e $ ! > _p_salto _tamanhoMsg 1650  ]
 {
 [e $U 1647  ]
 }
 [e :U 1650 ]
-"151
-[; ;ORailFense.c: 151:         while(1){
+"154
+[; ;ORailFense.c: 154:         while(1){
 [e :U 1652 ]
 {
-"152
-[; ;ORailFense.c: 152:             if(p_salto > tamanhoMsg - 1){break;}
+"155
+[; ;ORailFense.c: 155:             if(p_salto > tamanhoMsg - 1){break;}
 [e $ ! > _p_salto - _tamanhoMsg -> 1 `i 1654  ]
 {
 [e $U 1653  ]
 }
 [e :U 1654 ]
-"155
-[; ;ORailFense.c: 155:             UART_Escrever(texto[p_salto]);
+"158
+[; ;ORailFense.c: 158:             UART_Escrever(texto[p_salto]);
 [e ( _UART_Escrever (1 *U + &U _texto * -> -> _p_salto `ui `ux -> -> # *U &U _texto `ui `ux ]
-"156
-[; ;ORailFense.c: 156:             if(s_salto > tamanhoMsg - 1){break;}
+"159
+[; ;ORailFense.c: 159:             if(s_salto > tamanhoMsg - 1){break;}
 [e $ ! > _s_salto - _tamanhoMsg -> 1 `i 1655  ]
 {
 [e $U 1653  ]
 }
 [e :U 1655 ]
-"159
-[; ;ORailFense.c: 159:             UART_Escrever(texto[s_salto]);
-[e ( _UART_Escrever (1 *U + &U _texto * -> -> _s_salto `ui `ux -> -> # *U &U _texto `ui `ux ]
-"161
-[; ;ORailFense.c: 161:             p_salto = s_salto + primeiro_salto;
-[e = _p_salto + _s_salto _primeiro_salto ]
 "162
-[; ;ORailFense.c: 162:             s_salto = p_salto + segundo_salto;
+[; ;ORailFense.c: 162:             UART_Escrever(texto[s_salto]);
+[e ( _UART_Escrever (1 *U + &U _texto * -> -> _s_salto `ui `ux -> -> # *U &U _texto `ui `ux ]
+"164
+[; ;ORailFense.c: 164:             p_salto = s_salto + primeiro_salto;
+[e = _p_salto + _s_salto _primeiro_salto ]
+"165
+[; ;ORailFense.c: 165:             s_salto = p_salto + segundo_salto;
 [e = _s_salto + _p_salto _segundo_salto ]
-"163
-[; ;ORailFense.c: 163:         }
+"166
+[; ;ORailFense.c: 166:         }
 }
 [e :U 1651 ]
 [e $U 1652  ]
 [e :U 1653 ]
-"164
-[; ;ORailFense.c: 164:     }
+"167
+[; ;ORailFense.c: 167:     }
 }
 [e ++ _linha -> 1 `i ]
 [e :U 1649 ]
 [e $ < _linha _key 1646  ]
 [e :U 1647 ]
 }
-"170
-[; ;ORailFense.c: 170: }
+"173
+[; ;ORailFense.c: 173: }
 [e :UE 1645 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"173
-[; ;ORailFense.c: 173: int main(void) {
+"176
+[; ;ORailFense.c: 176: int main(void) {
 [v _main `(i ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"175
-[; ;ORailFense.c: 175:     UART_iniciar();
-[e ( _UART_iniciar ..  ]
-"176
-[; ;ORailFense.c: 176:     while(1){
-[e :U 1658 ]
-{
+"177
+[; ;ORailFense.c: 177:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
 "178
-[; ;ORailFense.c: 178:         UART_Escrever_Texto("mensagem original\n: ");
-[e ( _UART_Escrever_Texto (1 :s 1C ]
-"179
-[; ;ORailFense.c: 179:         UART_Escrever_Texto(texto);
-[e ( _UART_Escrever_Texto (1 -> &U _texto `*uc ]
-"180
-[; ;ORailFense.c: 180:         UART_Escrever_Texto("\r\r\r");
-[e ( _UART_Escrever_Texto (1 :s 2C ]
-"181
-[; ;ORailFense.c: 181:         UART_Escrever_Texto("Mensagem Cifrada: \n");
-[e ( _UART_Escrever_Texto (1 :s 3C ]
-"183
-[; ;ORailFense.c: 183:         cifra_de_rail_tigre();
-[e ( _cifra_de_rail_tigre ..  ]
+[; ;ORailFense.c: 178:     UART_iniciar();
+[e ( _UART_iniciar ..  ]
+"185
+[; ;ORailFense.c: 185:     LATBbits.LATB0 = 1;
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 "186
-[; ;ORailFense.c: 186:         UART_Escrever_Texto("\nFim da mensagem\n\n");
-[e ( _UART_Escrever_Texto (1 :s 4C ]
+[; ;ORailFense.c: 186:     cifra_de_rail_tigre();
+[e ( _cifra_de_rail_tigre ..  ]
+"187
+[; ;ORailFense.c: 187:     LATBbits.LATB0 = 0;
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 "188
-[; ;ORailFense.c: 188:     }
-}
-[e :U 1657 ]
-[e $U 1658  ]
-[e :U 1659 ]
-"189
-[; ;ORailFense.c: 189: }
+[; ;ORailFense.c: 188:     _delay((unsigned long)((50)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"192
+[; ;ORailFense.c: 192: }
 [e :UE 1656 ]
 }
-[a 1C 109 101 110 115 97 103 101 109 32 111 114 105 103 105 110 97 108 10 58 32 0 ]
-[a 2C 13 13 13 0 ]
-[a 3C 77 101 110 115 97 103 101 109 32 67 105 102 114 97 100 97 58 32 10 0 ]
-[a 4C 10 70 105 109 32 100 97 32 109 101 110 115 97 103 101 109 10 10 0 ]
